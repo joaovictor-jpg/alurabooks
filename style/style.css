@@ -1,0 +1,11 @@
+:root {
+    --cor-primario: #EBECEE;
+}
+
+body {
+    background-color: var(--cor-primario);
+}
+
+h1 {
+    background-color: white;
+}
