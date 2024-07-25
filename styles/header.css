@@ -66,6 +66,9 @@
     display: none;
 }
 @media screen and (min-width: 1024px) {
+    header {
+        padding: 0 2em;
+    }
     .cabecalho__menu-hamburguer {
         display: none;
     }
@@ -87,6 +90,15 @@
 
     .opcoes {
         display: flex;
+    }
+
+    .opcoes__botao {
+        display: none;
+    }
+
+    .opcoes__botao:checked~.container__lista-menu {
+        display: block;
+        width: auto;
     }
     
     .opcoes__item {
