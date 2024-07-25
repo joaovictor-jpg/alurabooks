@@ -85,7 +85,27 @@
             <!-- If we need navigation buttons -->
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
-        </div </section>
+        </div>
+        <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descricao">
+                <div class="descricao">
+                    <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                    <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                    <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                </div>
+                <img class="descricao__imagem" src="assets/Angular.svg" alt="Livro de Angular">
+            </div>
+            <!-- 2º linha -->
+            <div class="card__botoes">
+                <ul class="botoes">
+                    <li class="botoes__itens"><img src="assets/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botoes__itens"><img src="assets/Compras.svg" alt="Adicionar no carrinho de compra"></li>
+                </ul>
+                <a href="#" class="botoes__ancora">Saiba mais...</a>
+            </div>
+        </div>
+    </section>
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script>
             const swiper = new Swiper('.swiper', {
