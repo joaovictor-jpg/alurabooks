@@ -73,3 +73,14 @@
     text-decoration: none;
     border-radius: 7px;
 }
+
+.descricao__estrela {
+    margin-bottom: 0.5em;
+}
+
+.nome__autor {
+    color: blue;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0.5em 0 1em;
+}

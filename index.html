@@ -59,6 +59,7 @@
         </p>
         <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
+    <!-- 1º Carrosel -->
     <section class="carrosel">
         <h2 class="carrosel__titulo">
             Novos lançamentos
@@ -106,17 +107,67 @@
             </div>
         </div>
     </section>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
-            const swiper = new Swiper('.swiper', {
-                spaceBetween: 10,
-                slidesPerView: 3,
-                pagination: {
-                    el: '.swiper-pagination',
-                    type: 'bullets',
-                },
-            });
-        </script>
+    <!-- 2º Carrosel-->
+    <section class="carrosel">
+        <h2 class="carrosel__titulo">
+            Novos lançamentos
+        </h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="assets/Arquitetura.svg"
+                        alt="Livro sobre arquitetura"></div>
+                <div class="swiper-slide"><img src="assets/Construct2.svg"
+                        alt="Livro sobre construct"></div>
+                <div class="swiper-slide"><img src="assets/Gestão2.svg"
+                        alt="Livro sobre Gestão 2"></div>
+                <div class="swiper-slide"><img src="assets/MEAN.svg" alt="Livro sobre Mean"></div>
+                <div class="swiper-slide"><img src="assets/MetricasAgeis.svg" alt="Livro sobre Metricas ageis"></div>
+                <div class="swiper-slide"><img src="assets/UX.svg" alt="Livro sobre UX"></div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+        <div class="card">
+            <!-- 1º linha -->
+            <div class="card__descricao">
+                <div class="descricao card__descricao__div">
+                    <img class="descricao__estrela" src="assets/Estrelinhas.svg" alt="estrelas">
+                    <h3 class="descricao__titulo">Autora do Mês</h3>
+                    <h2 class="nome__autor">Juliana Agarikov</h2>
+                    <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End. </p>
+                </div>
+                <img class="descricao__imagem" src="assets/Perfil-escritora 1.svg" alt="Autora Juliana Agarikov">
+            </div>
+            <!-- 2º linha -->
+            <div class="card__botoes">
+                <ul class="botoes">
+                    <li class="botoes__itens"><img src="assets/Favoritos.svg" alt="Favoritar livro"></li>
+                    <li class="botoes__itens"><img src="assets/Compras.svg" alt="Adicionar no carrinho de compra"></li>
+                </ul>
+                <a href="#" class="botoes__ancora">Saiba mais...</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 </body>
 
 </html>
