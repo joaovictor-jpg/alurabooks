@@ -6,7 +6,7 @@
     position: relative;
 }
 
-.container__botao:checked ~ .container__lista-menu {
+.container__botao:checked~.container__lista-menu {
     display: block;
 }
 
@@ -32,4 +32,23 @@
     display: none;
     position: absolute;
     top: 100%;
+    width: 60vw;
+}
+
+.conntainer__lista-menu__titulo,
+.conntainer__lista-menu__item {
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.conntainer__lista-menu__titulo {
+    color: var(--laranja);
+}
+
+.conntainer__lista-menu__item__link {
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
 }
