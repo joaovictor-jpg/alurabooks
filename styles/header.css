@@ -6,10 +6,6 @@
     position: relative;
 }
 
-.container__botao:checked~.container__lista-menu {
-    display: block;
-}
-
 .cabecalho__menu-hamburguer {
     width: 24px;
     height: 24px;
@@ -22,6 +18,14 @@
 .container {
     display: flex;
     align-items: center;
+}
+
+.container__botao {
+    display: none;
+}
+
+.container__botao:checked~.container__lista-menu {
+    display: block;
 }
 
 .container__imagens {
@@ -43,6 +47,7 @@
 
 .conntainer__lista-menu__titulo {
     color: var(--laranja);
+    font-weight: 700;
 }
 
 .conntainer__lista-menu__item__link {
