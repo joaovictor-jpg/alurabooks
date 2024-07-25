@@ -32,3 +32,13 @@
     font-weight: 700;
     text-transform: uppercase;
 }
+
+@media screen and (min-width: 1024px) {
+    .topico__titulo {
+        font-size: 1.5rem;
+    }
+
+    .topico__item > a {
+        font-size: 1.5rem;
+    }
+}
