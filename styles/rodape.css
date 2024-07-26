@@ -43,3 +43,14 @@ hr {
         color: var(--cinza);
     }
 }
+
+@media screen and (min-width: 1728px) {
+    .rodape {
+        padding-top: 3.4em;
+    }
+
+    .rodape__educacao {
+        border-left: 1px solid var(--cinza);
+        padding-left: 1.25em;
+    }
+}

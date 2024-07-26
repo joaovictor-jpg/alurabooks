@@ -70,6 +70,14 @@
     display: none;
 }
 
+.container__botao:checked~.container__rotulo >.cabecalho__menu-hamburguer {
+    background-image: url('../assets/menu_black_24dp\ 1.svg');
+}
+
+.container__botao:checked~.container__rotulo {
+    background: var(--azul-degrade);
+}
+
 @media screen and (min-width: 1024px) {
     header {
         padding: 0 2em;
@@ -118,6 +126,24 @@
 
     .container__imagem-transparente {
         display: none;
+    }
+
+    .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
+    .opcoes__item {
+        padding: 2em 1em;
+    }
+
+    .conntainer__lista-menu__item:hover {
+        background: var(--azul-degrade);
+    }
+
+    .conntainer__lista-menu__item:hover > .conntainer__lista-menu__item__link {
+        -webkit-text-fill-color: var(--branco);
+        text-decoration: none;
     }
 }
 
